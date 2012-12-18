@@ -1,4 +1,4 @@
-public class MaxMin {
+public class TabEntMaxMin {
     public static void main (String[] args) {
 
 	// Exemple d'utilisation

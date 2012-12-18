@@ -4,7 +4,7 @@ public class TriIndiceMin {
 
     public static void main (String[] args) {
 	
-	int[] tab = {5,0,41,9,22,14,7,19,4,2};
+	int[] tab = {5,0,5,41,9,-22,14,-7,9,19,4,-2};
 	int indiceMin;
 	int tmp;
 	int n = tab.length;

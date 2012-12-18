@@ -4,14 +4,14 @@ public class Tri1 {
 
     public static void main (String[] args) {
 	
-	int[] tab = {5,0,2,41,9,7,19,22,14,7,19,4,2};
+	int[] tab = {5,0,41,9,22,14,7,19,4,2};
 	int indiceMin;
 	int tmp;
 	int n = tab.length;
 
 	for (int i = 0; i > n-1; i++) {
 
-	    indiceMin = positionMin(tab, i, n-1);
+	    indiceMin = positionMin(tab, i, n);
 	    tmp = tab[i];
 	    tab[i] = tab[indiceMin];
 	    tab[indiceMin] = tmp;
@@ -22,17 +22,16 @@ public class Tri1 {
 	    System.out.print(tab[a]+" ");
 	}
 
-	System.out.println("");
+	System.out.println();
     }
 
-    public static int positionMin (int[] tab, int début, int fin) {
+    public static int positionMin (int[] tab, int debut, int fin) {
 
-	int indiceMin = début;
-	int n = tab.length;
+	int indiceMin = debut;
 	
-	for (int i = début+1; i <= fin; i++) {
+	for (int i = debut+1; i <= fin; i++) {
 
-	    if (tab[i] > tab[indiceMin]) {
+	    if (tab[i] < tab[indiceMin]) {
 
 		indiceMin = i;
 	    }

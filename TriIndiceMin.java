@@ -1,4 +1,4 @@
-public class Tri1 {
+public class TriIndiceMin {
 
     // Exemple d'utilisation
 

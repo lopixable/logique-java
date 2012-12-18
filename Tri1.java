@@ -9,9 +9,9 @@ public class Tri1 {
 	int tmp;
 	int n = tab.length;
 
-	for (int i = 0; i > n-1; i++) {
+	for (int i = 0; i < n-1; i++) {
 
-	    indiceMin = positionMin(tab, i, n);
+	    indiceMin = positionMin(tab, i, n-1);
 	    tmp = tab[i];
 	    tab[i] = tab[indiceMin];
 	    tab[indiceMin] = tmp;

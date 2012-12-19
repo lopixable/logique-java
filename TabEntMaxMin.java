@@ -32,8 +32,8 @@ public class TabEntMaxMin {
             if (tabEnt[i] < min) {
                 min = tabEnt[i];
             }   
-        }   
-            
+        }
+        
         return min;
     }
 }
